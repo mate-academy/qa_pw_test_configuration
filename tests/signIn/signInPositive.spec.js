@@ -7,8 +7,8 @@ test('Successful `Sign in` flow test', async ({ page }) => {
   const homePage = new HomePage(page); 
 
   await signInPage.open();
-  await signInPage.fillEmailField('test_new_user@gmail.com');
-  await signInPage.fillPasswordField('newpass123!');
+  await signInPage.fillEmailField('add your email');
+  await signInPage.fillPasswordField('add your password');
   await signInPage.clickSignInButton(); 
 
   await homePage.assertYourFeedTabIsVisible();
