@@ -2,11 +2,11 @@ const { expect } = require('@playwright/test');
 
 export class SignInPage {
   constructor(page) {
-      this.page = page; 
-      this.emailField = page.getByPlaceholder('Email');
-      this.passwordField = page.getByPlaceholder('Password');
-      this.signInButton = page.getByRole('button', { name: 'Sign in' });
-      this.errorMessage = page.getByRole('list').nth(1);
+    this.page = page;
+    this.emailField = page.getByPlaceholder('Email');
+    this.passwordField = page.getByPlaceholder('Password');
+    this.signInButton = page.getByRole('button', { name: 'Sign in' });
+    this.errorMessage = page.getByRole('list').nth(1);
   }
 
   async open() {
